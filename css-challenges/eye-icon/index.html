@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Code Challenge :: Visibility Icon</title>
+
+    <!-- 
+        The CSS will go below here
+     -->
+
+     <style>
+        body {
+            background-color: #151620;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .info {
+            padding: 1rem;
+            border: 2px solid #ed4321;
+            background-color:  rgba(255,255,255,.6);
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            color: #ededed;
+            font-weight: 900;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date {
+            color:#ed4321;
+            font-weight: 700;
+        }
+
+        .author {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .icon {
+            width: 500px;
+            height: 320px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer {
+            background-color: #696911;
+            height: 320px;
+            width: 320px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .middle {
+            border-radius: 50%;
+            background-color: #151620;
+            height: 90%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .inner {
+            border: 75px solid #f9b914;
+            box-sizing: border-box;
+            height: 82%;
+            width: 82%;
+            border-radius: 50%;
+        }
+
+        .square {
+            position: absolute;
+            transform: rotate(45deg);
+            height: 150px;
+            width: 150px;
+            background-color: #696911;
+        }
+
+        .left {
+            left: 55px;
+        }
+
+        .right {
+            right: 55px;
+        }
+     </style>
+
+</head>
+<body>
+
+    <!-- 
+        Minimal amount of HTML to get the correct amount
+        of elements and classes needed
+     -->
+    
+     <div class="info">
+        <span class="title">Visibility Icon CSS Code Challenge</span>
+        <div class="stats">
+            <span class="author">Jake Thompson</span>
+            <span class="date">July 23, 2022</span>
+        </div>
+     </div>
+
+    <div class="icon">
+        <div class="square left"></div>
+        <div class="square right"></div>
+        <div class="outer">
+            <div class="middle">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
