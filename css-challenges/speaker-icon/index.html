@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Code Challenge :: Speaker Icon</title>
+
+    <!-- 
+        The CSS will go below here
+     -->
+
+     <style>
+        body {
+            background-color: #060923;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .icon {
+            width: 400px;
+            height: 350px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1rem;
+            margin-left: 8px;
+        }
+
+        .left {
+            background-color: #373788;
+            flex: 1;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .right {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .circle-a {
+            width: 180%;
+            height: 90% !important;
+            margin-left: -90%;
+        }
+
+        .circle-b {
+            border: 25px solid #373788;
+            box-sizing: border-box;
+            height: 100%;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        .block {
+            background-color: #060923;
+            width: 125px;
+            height: 125px;
+            position: absolute;
+        }
+
+        #a {
+            top: 0px;
+            left: -64px;
+        }
+
+        #b {
+            bottom: 0px;
+            left: -64px
+        }
+
+        #c {
+            right: 40px;
+            top: -90px;
+            height: 200px;
+            transform: rotate(45deg);
+        }
+
+        #d {
+            bottom: -90px;
+            height: 200px;
+            right: 40px;
+            transform: rotate(-45deg);
+        }
+
+        .info {
+            padding: 1rem;
+            border: 2px solid #ed4321;
+            background-color:  rgba(255,255,255,.6);
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            color: #ededed;
+            font-weight: 900;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date {
+            color:#ed4321;
+            font-weight: 700;
+        }
+
+        .author {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+     </style>
+
+</head>
+<body>
+
+    <!-- 
+        Minimal amount of HTML to get the correct amount
+        of elements and classes needed
+     -->
+    
+     <div class="info">
+        <span class="title">Speaker Icon CSS Code Challenge</span>
+        <div class="stats">
+            <span class="author">Jake Thompson</span>
+            <span class="date">July 23, 2022</span>
+        </div>
+     </div>
+
+    <div class="icon">
+        <div class="left">
+            <div class="block" id="a"></div>
+            <div class="block" id="b"></div>
+            <div class="block" id="c"></div>
+            <div class="block" id="d"></div>
+        </div>
+        <div class="right">
+            <div class="circle-a circle-b">
+                <div class="circle-b">
+                    <div class="circle-b"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
